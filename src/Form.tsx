@@ -32,7 +32,7 @@ const defaultValues = {
   technos: []
 };
 
-const MyForm = () => {
+const Form = () => {
   const {
     control,
     formState: { errors },
@@ -105,4 +105,4 @@ const MyForm = () => {
   );
 };
 
-export default MyForm;
+export default Form;

@@ -43,7 +43,7 @@ const Form = () => {
     resolver: zodResolver(schema)
   });
 
-  const customSubmit = (data) => console.log(JSON.stringify(data));
+  const onSubmit = (values) => console.log(JSON.stringify(values));
 
   return (
     <Box
@@ -54,7 +54,7 @@ const Form = () => {
         justifyContent: "space-between"
       }}
     >
-      <form onSubmit={handleSubmit(customSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <FormControl component="fieldset" error={!!errors?.technos}>
             <FormLabel component="legend">Technos</FormLabel>
